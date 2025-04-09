@@ -77,6 +77,18 @@ window.addEventListener('wheel', function (dets) {
 //   el: document.querySelector("#main"),
 //   smooth: true
 // });
+function downloadResume() {
+    // URL of the resume file (PDF/Word/etc.)
+    const fileUrl = '09_SAURABH_Resume.pdf';  
+    const fileName = '09_SAURABH_Resume.pdf';
+
+    const link = document.createElement('a');
+    link.href = fileUrl;
+    link.download = fileName; // Set the file name for download
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }
 
 
 
