@@ -45,27 +45,37 @@ gsap.from('.skils img', {
 //     boxShadow: "0 20px 20px rgba(255, 255, 255, 1)",
 //     ease: "power2.out"
 // })
-window.addEventListener('wheel', function (dets) {
-    if (dets.deltaY > 0) {
-        gsap.to('.marque h1', {
-            transform: 'translateX(-150%)',
-            ease: 'none',
-            duration: 1,
-            x: '20%',
-            ease: "none"
-        })
-
-    }
-    else {
-        gsap.to('.marque h1', {
-            transform: 'translateX(0%)',
-            duration: 1,
-            ease: 'none',
-            x: '20%',
-            ease: "none"
-        })
+gsap.to('.marque h1', {
+    xPercent: -100,
+    scrollTrigger: {
+        trigger: '.page2',
+        start: 'top bottom',
+        end: 'bottom top',
+        scrub: true
     }
 });
+//Trial
+// window.addEventListener('wheel', function (dets) {
+//     if (dets.deltaY > 0) {
+//         gsap.to('.marque h1', {
+//             transform: 'translateX(-150%)',
+//             ease: 'none',
+//             duration: 1,
+//             x: '20%',
+//             ease: "none"
+//         })
+
+//     }
+//     else {
+//         gsap.to('.marque h1', {
+//             transform: 'translateX(0%)',
+//             duration: 1,
+//             ease: 'none',
+//             x: '20%',
+//             ease: "none"
+//         })
+//     }
+// });
 
 // })
 
