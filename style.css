@@ -316,6 +316,7 @@ body {
     .marque {
         font-size: 22px;
         padding: 0 1vw;
+        transform: translateX(0%);
     }
 
     .about p {
