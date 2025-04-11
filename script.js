@@ -1,3 +1,4 @@
+gsap.registerPlugin(ScrollTrigger);
 let tl = gsap.timeline();
 gsap.from('.heading h3', {
     x: -50,
