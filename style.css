@@ -312,10 +312,18 @@ body {
     .page2 {
         height: auto;
     }
-
+     #move {
+        display: flex;
+        padding: 2vw 0;
+        overflow: hidden;
+    }  
     .marque {
         font-size: 22px;
         padding: 0 1vw;
+        display: flex;
+        align-items: center;
+        flex-shrink: 0;
+        color: white;
         transform: translateX(0%);
     }
 
