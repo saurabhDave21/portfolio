@@ -6,6 +6,10 @@
 .heading span {
     margin-left: 5px;
 }
+html, body {
+  height: 100%;
+  overflow-x: hidden;
+}
 
 body {
     background-color: #111;
