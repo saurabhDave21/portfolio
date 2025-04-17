@@ -6,10 +6,6 @@
 .heading span {
     margin-left: 5px;
 }
-html, body {
-  height: 100%;
-  overflow-x: hidden;
-}
 
 body {
     background-color: #111;
@@ -277,7 +273,7 @@ body {
     color: #00b3ff;
 }
 
-/* Original styles stay unchanged */
+
 
 @media screen and (max-width: 600px) {
     .heading h1 {
@@ -316,11 +312,7 @@ body {
     .page2 {
         height: auto;
     }
-     #move {
-        display: flex;
-        padding: 2vw 0;
-        overflow: hidden;
-    }  
+
     .marque {
         font-size: 22px;
         padding: 0 1vw;
@@ -330,7 +322,11 @@ body {
         color: white;
         transform: translateX(0%);
     }
-
+    #move {
+        display: flex;
+        padding: 2vw 0;
+        overflow: hidden;
+    }    
     .about p {
         font-size: 6vh;
         line-height: 1.2;
